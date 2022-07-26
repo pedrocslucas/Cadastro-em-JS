@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root {
+    --cortexto: #f3f3f3;
+    --corfundo: #3f3f3f;
+    --corpadrao: #F5E291;
+    --corfraca: #F7F2DB;
+    --cormedia: #C2B372;
+    --corforte: #756C45;
+    --corcontraste: #757368;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: var(--corfundo);
+    color: var(--cortexto);
+    padding: 1px;
+    text-align: center;
+}
+
+/*Conteúdo*/
+main {
+    max-width: 400px;
+    border: 3px solid var(--corforte);
+    border-radius: 0px 0px 5px 5px;
+    background-color: var(--corpadrao);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.formulario > label {
+    display: inline-block;
+    font-size: .8em;
+    font-weight: bold;
+    color: var(--corfundo);
+    margin-top: 8px;
+}
+
+.formulario > input {
+    display: block;
+    margin: auto;
+    font-size: 1em;
+}
+
+.botao {
+    margin: 10px;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--cortexto);
+    background-color: var(--corcontraste);
+    border: none;
+    border-radius: 2px;
+}
+
+.botao:hover {
+    background-color: var(--corfraca);
+    color: var(--corfundo);
+}
+
+/*Rodapé*/
+footer {
+    background-color: var(--corfundo);
+}
+
+.social-list {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.rede {
+    display: inline-block;
+    padding: 10px;
+}
+
+.rede > a{
+    text-decoration: none;
+    color: var(--cortexto);
+}
+
+.rede > a:hover {
+    color: var(--cormedia);
+}
+
+.notacao {
+    padding: 10px;
+    text-align: center;
+    color: var(--cortexto);
+}
+
+.notacao > span{
+    color: var(--cormedia);
+}

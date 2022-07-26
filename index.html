@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro JS</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+    <main>
+        <form class="formulario" action="script.js" method="get">
+            <label>NOME</label>
+            <input type="text" name="nome" id="nome">
+
+            <label>EMAIL</label>
+            <input type="email" name="email" id="email">
+            
+            <label>SENHA</label>
+            <input type="password" name="senha" id="senha">
+            
+            <label>CONFIRMAR SENHA</label>
+            <input type="password" name="confSenha" id="confSenha">
+            
+            <button class="botao" onclick="limpar()">Limpar</button>
+            <button class="botao" onclick="cadastrar()">Cadastrar</button>
+        </form>
+    </main>
+    <footer>
+        <ul class="social-list">
+            <li class="rede">
+                <a href="#">WhatsApp</a>
+            </li>
+            <li class="rede">
+                <a href="#">Instagram</a>
+            </li>
+            <li class="rede">
+                <a href="#">LinkedIn</a>
+            </li>
+            <li class="rede">
+                <a href="#">GitHub</a>
+            </li>
+            <li class="rede">
+                <a href="#">GMail</a>
+            </li>
+        </ul>
+        <p class="notacao">
+            Site desenvolvido com cunho educativo por <span>Pedro Lucas</span> estudante do curso de Sistemas de Informação no Instituto Federal do Maranhão.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
