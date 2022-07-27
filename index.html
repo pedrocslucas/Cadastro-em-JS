@@ -10,23 +10,29 @@
 <body>
     <header>
         <h1>Formulário de Cadastro</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Lista</a>
+            <a href="#">Sobre</a>
+        </nav>
     </header>
     <main>
+        <h2>Criar Conta</h2>
         <form class="formulario">
-            <label>NOME</label>
+            <label for="nome">NOME</label>
             <input type="text" name="nome" id="nome">
 
-            <label>EMAIL</label>
+            <label for="email">EMAIL</label>
             <input type="email" name="email" id="email">
             
-            <label>SENHA</label>
+            <label for="senha">SENHA</label>
             <input type="password" name="senha" id="senha">
             
-            <label>CONFIRMAR SENHA</label>
+            <label for="confSenha">CONFIRMAR SENHA</label>
             <input type="password" name="confSenha" id="confSenha">
-            
-            <button class="botao" onclick="limpar()">Limpar</button>
-            <button class="botao" onclick="validar()">Cadastrar</button>
+
+            <button type="submit" class="botao" onclick="limpar()">Limpar</button>
+            <button type="submit" class="botao" onclick="validar()">Cadastrar</button>
         </form>
         <div id="resp">
         </div>
@@ -37,20 +43,20 @@
                 <a href="#">WhatsApp</a>
             </li>
             <li class="rede">
-                <a href="#">Instagram</a>
+                <a href="https://www.instagram.com/pedrocslucas/" target="_blank">Instagram</a>
             </li>
             <li class="rede">
-                <a href="#">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/pedrocslucas/" target="_blank">LinkedIn</a>
             </li>
             <li class="rede">
-                <a href="#">GitHub</a>
+                <a href="https://github.com/pedrowlucas" target="_blank">GitHub</a>
             </li>
             <li class="rede">
-                <a href="#">GMail</a>
+                <a href="mailto:lucassilvach33r@gmail.com">GMail</a>
             </li>
         </ul>
         <p class="notacao">
-            Site desenvolvido com cunho educativo por <span>Pedro Lucas</span> estudante do curso de Sistemas de Informação no Instituto Federal do Maranhão.
+            Site desenvolvido com objetivo educativo e profissional por <span>Pedro Lucas</span> estudante do curso de Sistemas de Informação no Instituto Federal do Maranhão.
         </p>
     </footer>
     <script src="script.js"></script>

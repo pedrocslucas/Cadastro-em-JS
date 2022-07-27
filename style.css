@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
 :root {
     --cortexto: #f3f3f3;
     --corfundo: #3f3f3f;
@@ -8,12 +10,13 @@
     --cormedia: #9BABBF;
     --corforte: #3B5473;
     --corcontraste: #5D6773;
+    --corbotao: #ff6e34;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
-    background-color: white;
+    background-color: var(--cormedia);
     margin: 0;
     height: 100vh;
 }
@@ -24,47 +27,84 @@ header {
     color: var(--cortexto);
     padding: 1px;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+header > h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    font-size: 1.1em;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--corfraca);
+}
+
+nav > a:hover {
+    color: var(--corpadrao);
 }
 
 /*Conteúdo*/
 main {
-    max-width: 400px;
-    border: 3px solid var(--corforte);
-    border-radius: 0px 0px 5px 5px;
-    background-color: var(--corpadrao);
+    max-width: 450px;
+    height: 600px;
+    border: 3px solid var(--corfundo);
+    border-radius: 8px;
+    box-shadow: 8px var(--corcontraste);
+    background-color: var(--corforte);
     margin: auto;
-    padding: 10px;
-    text-align: center;
+    padding-left: 30px;
+}
+
+main > h2 {
+    font-size: 2.3em;
+    color: var(--corfraca);
 }
 
 .formulario > label {
     display: inline-block;
-    font-size: .8em;
+    font-size: 1em;
     font-weight: bold;
-    color: var(--corfundo);
-    margin-top: 8px;
+    color: var(--cormedia);
+    margin: 10px 0px;
 }
 
 .formulario > input {
     display: block;
-    margin: auto;
-    font-size: 1em;
+    width: 350px;
+    background-color: var(--cortexto);
+    border-style: outset;
+    border-color: var(--corfundo);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+.formulario > input:focus {
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: var(--corfraca);
 }
 
 .botao {
-    margin: 10px;
+    display: inline-block;
+    width: 160px;
+    margin: 40px 40px 0px 0px;
     font-size: .9em;
     font-weight: bold;
-    padding: 5px;
-    color: var(--cortexto);
-    background-color: var(--corcontraste);
+    padding: 8px;
+    background-color: var(--corbotao);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .botao:hover {
-    background-color: var(--corfraca);
-    color: var(--corfundo);
+    background-color: var(--corpadrao);
+    color: var(--cortexto);
 }
 
 .resp {
@@ -95,6 +135,7 @@ footer {
 }
 
 .rede > a:hover {
+    text-decoration: underline;
     color: var(--cormedia);
 }
 
@@ -106,4 +147,8 @@ footer {
 
 .notacao > span{
     color: var(--cormedia);
+}
+
+.notacao > span:hover {
+    cursor: pointer;
 }
