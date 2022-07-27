@@ -12,7 +12,7 @@
         <h1>Formulário de Cadastro</h1>
     </header>
     <main>
-        <form class="formulario" action="script.js" method="get">
+        <form class="formulario">
             <label>NOME</label>
             <input type="text" name="nome" id="nome">
 
@@ -26,8 +26,10 @@
             <input type="password" name="confSenha" id="confSenha">
             
             <button class="botao" onclick="limpar()">Limpar</button>
-            <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            <button class="botao" onclick="validar()">Cadastrar</button>
         </form>
+        <div id="resp">
+        </div>
     </main>
     <footer>
         <ul class="social-list">

@@ -67,6 +67,12 @@ main {
     color: var(--corfundo);
 }
 
+.resp {
+    color: var(--corfundo);
+    font-size: 1em;
+    padding: 10px;
+}
+
 /*Rodapé*/
 footer {
     background-color: var(--corfundo);
