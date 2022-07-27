@@ -3,11 +3,11 @@
 :root {
     --cortexto: #f3f3f3;
     --corfundo: #3f3f3f;
-    --corpadrao: #F5E291;
-    --corfraca: #F7F2DB;
-    --cormedia: #C2B372;
-    --corforte: #756C45;
-    --corcontraste: #757368;
+    --corpadrao: #7DB3F4;
+    --corfraca: #C6DAF3;
+    --cormedia: #9BABBF;
+    --corforte: #3B5473;
+    --corcontraste: #5D6773;
 }
 
 body {
