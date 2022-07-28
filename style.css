@@ -18,6 +18,23 @@ body {
     border: 0;
 }
 
+/*Cabeçalho*/
+header {
+    background-color: #25262B;
+    margin-bottom: 20px;
+    color: #f3f2f3;
+    text-align: center;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f3f2f3;
+}
+
+nav a:hover {
+    color: #6C63FF;
+}
 
 /*Conteúdo*/
 section {
@@ -44,8 +61,8 @@ section {
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -122,4 +139,36 @@ section {
 .form button:hover {
     background-color: #584ff5;
     transition: 0.3s;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #25262B;
+    margin-top: 20px;
+    color: #f3f2f3;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f3f2f3;
+}
+
+footer a:hover {
+    color: #ACBAE1;
+    text-decoration: underline;
+}
+
+footer p {
+    padding: 15px;
+    font-size: .9em;
 }
