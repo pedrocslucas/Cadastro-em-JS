@@ -8,57 +8,52 @@
     <title>Cadastro JS</title>
 </head>
 <body>
-    <header>
-        <h1>Formulário de Cadastro</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Lista</a>
-            <a href="#">Sobre</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Criar Conta</h2>
-        <form class="formulario">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome">
-
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-            
-            <label for="senha">SENHA</label>
-            <input type="password" name="senha" id="senha">
-            
-            <label for="confSenha">CONFIRMAR SENHA</label>
-            <input type="password" name="confSenha" id="confSenha">
-
-            <button type="submit" class="botao" onclick="limpar()">Limpar</button>
-            <button type="submit" class="botao" onclick="validar()">Cadastrar</button>
-        </form>
-        <div id="resp">
+    
+    <section>
+        <div class="titulo">
+            <h2>Criar conta</h2>
         </div>
-    </main>
-    <footer>
-        <ul class="social-list">
-            <li class="rede">
-                <a href="#">WhatsApp</a>
-            </li>
-            <li class="rede">
-                <a href="https://www.instagram.com/pedrocslucas/" target="_blank">Instagram</a>
-            </li>
-            <li class="rede">
-                <a href="https://www.linkedin.com/in/pedrocslucas/" target="_blank">LinkedIn</a>
-            </li>
-            <li class="rede">
-                <a href="https://github.com/pedrowlucas" target="_blank">GitHub</a>
-            </li>
-            <li class="rede">
-                <a href="mailto:lucassilvach33r@gmail.com">GMail</a>
-            </li>
-        </ul>
-        <p class="notacao">
-            Site desenvolvido com objetivo educativo e profissional por <span>Pedro Lucas</span> estudante do curso de Sistemas de Informação no Instituto Federal do Maranhão.
-        </p>
-    </footer>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+                <i><img class="img-success" src="img/success-icon.svg" alt="succcess"></i>
+                <i><img class="img-error" src="img/error-icon.svg" alt="error"></i>
+
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="mail">Email</label>
+                <input type="email" id="mail">
+                <i><img class="img-success" src="img/success-icon.svg" alt="succcess"></i>
+                <i><img class="img-error" src="img/error-icon.svg" alt="error"></i>
+
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="psw">Senha</label>
+                <input type="password" id="psw">
+                <i><img class="img-success" src="img/success-icon.svg" alt="succcess"></i>
+                <i><img class="img-error" src="img/error-icon.svg" alt="error"></i>
+
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="pswTwo">Confirmar Senha</label>
+                <input type="password" id="autPsw">
+                <i><img class="img-success" src="img/success-icon.svg" alt="succcess"></i>
+                <i><img class="img-error" src="img/error-icon.svg" alt="error"></i>
+
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
