@@ -21,7 +21,7 @@ body {
 /*Cabeçalho*/
 header {
     background-color: #25262B;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     color: #f3f2f3;
     text-align: center;
 }
@@ -94,24 +94,9 @@ section {
     border: 3px solid #DB5A5A;
 }
 
-.form-control.error i.img-error {
-    visibility: visible;
-}
-
-.form-control.success i.img-success {
-    visibility: visible;
-}
-
 .form-control.error small{
     color: #DB5A5A;
     visibility: visible;
-}
-
-.form-control i {
-    position: absolute;
-    top: 45px;
-    right: 10px;
-    visibility: hidden;
 }
 
 .form-control small {
@@ -144,7 +129,7 @@ section {
 /*Rodapé*/
 footer {
     background-color: #25262B;
-    margin-top: 20px;
+    margin-top: 12px;
     color: #f3f2f3;
     text-align: center;
 }
